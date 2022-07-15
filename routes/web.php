@@ -37,9 +37,6 @@ Route::patch("/profile/{User:username}", [ProfileController::class, "update"])->
 
 Route::resource('/', HomeGoodGamersController::class)->middleware("auth");
 Route::get('/product/{gamelist}', [HomeGoodGamersController::class, "show"])->name("product")->middleware("auth");
-Route::get('/storage', function () {
-    return Artisan::call('storage:link');
-});
 
 Route::group(["prefix" => "admin", "middleware" => ["auth", "roles:admin"]], function () {
     // Category_data
