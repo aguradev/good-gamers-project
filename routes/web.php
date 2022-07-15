@@ -10,6 +10,7 @@ use App\Http\Controllers\HomeGoodGamersController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\RegisterController;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -36,7 +37,9 @@ Route::patch("/profile/{User:username}", [ProfileController::class, "update"])->
 
 Route::resource('/', HomeGoodGamersController::class)->middleware("auth");
 Route::get('/product/{gamelist}', [HomeGoodGamersController::class, "show"])->name("product")->middleware("auth");
-
+Route::get('/storage', function () {
+    Artisan::call('storage:link');
+});
 
 Route::group(["prefix" => "admin", "middleware" => ["auth", "roles:admin"]], function () {
     // Category_data
