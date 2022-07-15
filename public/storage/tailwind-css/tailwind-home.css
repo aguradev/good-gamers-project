@@ -1,0 +1,304 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --red-color: #F3406C;
+}
+
+body{
+    @apply font-poppins overflow-x-hidden;
+}
+
+nav.drawer{
+    @apply fixed top-0 left-0 bg-gray-900 lg:block hidden;
+    z-index: 99;
+    overflow-y: auto
+}
+
+.content-wrapper{
+    @apply flex;
+}
+
+.content-main{
+    @apply relative min-h-screen lg:pl-80 pb-16 pl-8 w-full !important;
+}
+
+.content-main, #sidebar-home{
+    @apply bg-mainColor !important;
+}
+
+.sidebar{
+    @apply min-h-full;
+}
+
+.icon-menu{
+    @apply text-lg
+}
+
+.sidebar-content{
+    @apply px-12 py-8 pb-0;
+}
+
+.dropdown-sidebar .dropdown-menu-sidebar{
+    @apply mb-2;
+}
+
+.dropdown-sidebar .dropdown-menu-sidebar li{
+    @apply pl-4;
+}
+
+.dropdown-sidebar .dropdown-menu-sidebar .sidebar-item a{
+    @apply text-sm;
+}
+.dropdown-sidebar .dropdown-menu-sidebar .sidebar-item .sidebar-link{
+    @apply text-sm mb-5;
+}
+
+.sidebar-item i{
+    @apply bg-slate-600 px-2 py-1 rounded-lg text-sm;
+}
+
+.sidebar-item .active{
+    @apply text-white bg-transparent;
+}
+
+.sidebar-item .active i{
+    @apply bg-blue-600 px-2 py-1 rounded-lg
+}
+
+.logo-img{
+    @apply w-52 mb-14;
+}
+
+#sidebar-home .header-menu{
+    @apply text-xs  mb-6 uppercase font-semibold tracking-wider;
+    color: var(--red-color);
+}
+
+.sidebar-link{
+    @apply flex items-center p-0 mb-7 text-sm;
+}
+
+#sidebar-home .sidebar-link:hover{
+    @apply bg-transparent text-white;
+}
+
+.section-header{
+    @apply flex justify-between items-center;
+}
+
+.section-header .search-header{
+    @apply shrink lg:w-6/12 w-full
+}
+
+.drawer .profile-section{
+    @apply flex items-center gap-x-3 mb-8;
+}
+
+.profile-section .name-user{
+    @apply text-sm
+}
+
+.search-game{
+    position: relative;
+}
+
+.search-game input{
+    position: relative;
+}
+
+.search-game button{
+    @apply absolute top-4 right-4;
+}
+
+.content-main{
+    @apply p-8 flex-1 bg-gray-800;
+}
+
+.content-main .banner-card{
+  @apply overflow-hidden bg-gray-900 relative rounded-lg  w-full h-96;
+}
+
+.content-main .banner-card .title-banner{
+    @apply text-3xl  text-white uppercase font-bold mb-2;
+}
+
+.banner-card .description{
+    @apply text-xs leading-6 text-white max-w-lg
+}
+
+.banner-card{
+    @apply mb-12;
+}
+
+.new-release-section,
+.most-release-section{
+    @apply mb-16
+}
+
+.banner-card .price-banner{
+    @apply text-lg  text-white uppercase font-normal mb-3;
+}
+
+.banner-card .data-banner{
+    @apply absolute bottom-0 left-0 py-8 px-10 z-10 w-full;
+    background: linear-gradient(0deg, rgba(0,0,0,0.7259278711484594) 0%, rgba(0,0,0,0) 100%);
+}
+
+.banner-card .img-banner{
+    @apply absolute top-0 left-0 w-full h-full object-cover;
+}
+
+.title-section{
+    @apply text-2xl text-white font-semibold tracking-wide mb-8;
+}
+
+.title-second-section{
+    @apply text-white tracking-wide mb-4;
+}
+
+.gamelist-item{
+ @apply relative overflow-hidden;
+}
+
+.gamelist-item .img-thumbnail:hover{
+    @apply opacity-50;
+}
+
+.gamelist-item .img-thumbnail{
+    @apply overflow-hidden relative rounded-md mb-4 lg:h-72 h-56;
+}
+
+.gamelist-item .img-thumbnail .img-game{
+    @apply object-cover h-full w-full;
+}
+
+.gamelist-item .data-game{
+    @apply text-white;
+}
+
+.data-game .title-game{
+    @apply text-sm mb-2;
+}
+
+.data-game .price-game{
+    @apply text-sm text-gray-400;
+}
+
+.product-main{
+    @apply p-0;
+}
+
+.product-page .header-page{
+    @apply bg-gray-500 p-10 lg:h-[32rem] bg-cover bg-no-repeat h-[40rem] rounded-bl-2xl mb-12
+}
+
+.header-data{
+    @apply flex flex-col justify-end h-full
+}
+
+.header-page h1.title-game-product{
+    @apply text-white text-2xl font-semibold uppercase mb-2
+}
+
+.header-page .price-game{
+    @apply text-lg uppercase mb-3 text-yellow-400 font-semibold;
+}
+
+.header-page .story-game-product{
+    @apply text-xs max-w-xl leading-loose mb-8 text-white
+}
+
+.about-content .title-about-game,
+.about-content .title-system-requirement{
+    @apply text-lg text-white mb-4
+}
+
+.about-content .story-genre-information{
+    @apply container grid grid-cols-4 gap-x-12 items-center mb-20;
+}
+
+.more-data-game{
+    @apply flex gap-x-4;
+}
+
+.about-content .description-about-game{
+    @apply text-xs leading-loose
+}
+
+.about-content .slider-game .image-slider{
+    @apply rounded-lg;
+}
+
+.slider-game{
+    @apply mb-12;
+}
+
+.system-requirement-section{
+    @apply flex gap-x-5;
+}
+
+.more-data-game .information-list,
+.more-data-game .value-information,
+.system-requirement-section .system-caption,
+.system-requirement-section .system-output{
+    @apply list-none;
+}
+
+.information-list li,
+.value-information li,
+.system-caption li,
+.system-output li{
+    @apply text-xs mb-4;
+}
+
+.slider-game .swiper-button-next,
+.slider-game .swiper-button-prev{
+    @apply text-white h-full mt-0 px-10;
+}
+
+.slider-game .swiper-slide-active{
+    filter: grayscale(0) !important;
+    opacity: 1 !important;
+}
+
+.slider-game .swiper-slide{
+    filter: grayscale(100%);
+    opacity: .2;
+}
+
+.slider-game .swiper-button-next{
+    background: linear-gradient(-90deg, rgba(8,9,16,1) 0%, rgba(8,9,16,0) 100%);
+    @apply right-0 top-0 bottom-0;
+}
+.slider-game .swiper-button-prev{
+    background: linear-gradient(90deg, rgba(8,9,16,1) 0%, rgba(8,9,16,0) 100%);
+    @apply left-0 top-0;
+}
+
+.slider-game .swiper-slide{
+    user-drag: none;  
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    pointer-events: none;
+}
+
+.profile-picture-name{
+    @apply flex mb-8 gap-x-6 items-center
+}
+
+.profile-picture-name .img-thumbnail{
+    @apply relative overflow-hidden w-60 h-60;
+}
+
+.img-profile{
+    @apply rounded-full w-full h-full object-cover;
+}
+
+.profile-picture-name .profile-title{
+@apply text-2xl mb-3 text-white font-semibold;
+}
