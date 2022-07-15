@@ -1,0 +1,130 @@
+.table tbody tr td{
+    @apply text-sm;
+}
+
+.table tr th{
+    @apply bg-gray-900; 
+}
+
+.table tbody tr:nth-child(even) td{
+    @apply bg-slate-800; 
+}
+.table tbody tr:nth-child(odd) td{
+    @apply bg-gray-900; 
+}
+
+.table tbody tr td{
+    @apply text-white align-middle p-6;
+}
+
+.table tbody tr:nth-child(odd){
+    @apply bg-gray-900;
+}
+.table tbody tr:nth-child(even){
+    @apply bg-gray-800;
+}
+
+.table tbody tr td.price-color{
+    @apply text-success font-bold;
+}
+
+.table tbody tr td a.badge{
+    @apply text-xs;
+}
+
+.table tbody tr td .image-table{
+    @apply  mx-auto;
+}
+
+.table .data-payment{
+    @apply w-1/2 mx-auto;
+}
+
+.table .payment-cover-td{
+    @apply p-0;
+}
+
+.data-not-found{
+    @apply flex flex-col justify-center mt-20;
+}
+
+.data-not-found .img-cta{
+    @apply max-w-md mx-auto mb-8;
+}
+
+.data-not-found .content-text{
+    @apply text-center;
+}
+
+.data-not-found h1{
+    @apply text-2xl text-white font-semibold mb-3;
+}
+
+.data-not-found p{
+    @apply mb-4
+}
+
+.data-not-found a{
+    @apply capitalize px-8;
+}
+
+.form-data{
+    @apply bg-gray-900 w-1/2 mb-8;
+}
+
+.form-data-full{
+    @apply w-full !important;
+}
+
+.form-data-gamelist{
+    @apply bg-gray-900 w-full mb-8;
+}
+
+.form-data .form-control{
+    @apply mb-4;
+}
+
+.form-data .label-text{
+    @apply mb-1 text-white;
+}
+
+.form-data .btn{
+    @apply text-sm capitalize;
+}
+
+.form-data .input-form{
+    @apply w-full input-md text-sm text-white;
+}
+
+.badge-note{
+    @apply badge badge-primary badge-xs px-4 py-3 mb-8 block;
+    line-height: 0;
+}
+
+.swal2-title{
+    @apply text-xl;
+}
+
+.section-header{
+    @apply pt-5;
+}
+
+.img-thumbnail-form{
+    @apply bg-gray-800 rounded-md mt-8 mb-3 p-8 overflow-hidden relative w-1/2;
+}
+
+.img-banner-preview{
+    @apply w-full;
+}
+
+.img-thumbnail-form #display-image{
+    @apply w-full rounded-md
+}
+
+.badge-resolution{
+    @apply mb-3 !important;
+}
+
+.form-group{
+    @apply grid grid-cols-2 gap-x-6 mb-8;
+}
