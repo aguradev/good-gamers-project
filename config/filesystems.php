@@ -35,10 +35,17 @@ return [
             'root' => storage_path('app'),
         ],
 
+        'storage' => [
+            'driver' => 'local',
+            'root' => storage_path('app/public/storage'),
+            'url' => env('APP_URL') . '/storage',
+            'visibility' => 'storage',
+        ],
+
         'public' => [
             'driver' => 'local',
             'root' => storage_path('app/public'),
-            'url' => env('APP_URL').'/storage',
+            'url' => env('APP_URL') . '/storage',
             'visibility' => 'public',
         ],
 
