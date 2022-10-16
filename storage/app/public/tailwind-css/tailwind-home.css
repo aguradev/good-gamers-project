@@ -300,5 +300,5 @@ nav.drawer{
 }
 
 .profile-picture-name .profile-title{
-@apply text-2xl mb-3 text-white font-semibold;
+    @apply text-2xl mb-3 text-white font-semibold;
 }

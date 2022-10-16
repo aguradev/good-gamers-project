@@ -1,0 +1,94 @@
+@tailwind components;
+@tailwind base;
+@tailwind utilities;
+
+body{
+    @apply bg-mainColor font-poppins !important;
+}
+
+.login-section,
+.register-section{
+    @apply relative;
+}
+
+.login-section .form-control,
+.register-section .form-control{
+    @apply mb-4;
+}
+
+.header{
+    @apply mb-6;
+}
+
+.text-header{
+    @apply text-4xl text-white font-semibold mb-3;
+}
+
+.header-section p {
+    @apply text-lg;
+}
+
+.login-section .form-control:nth-child(3),
+.register-section .form-control:nth-child(5){
+    @apply mb-12;
+}
+
+.login-section label,
+.register-section label{
+    @apply text-white font-semibold mb-2;
+}
+
+.login-section input,
+.register-section input{
+    @apply border-white bg-transparent;
+}
+
+.btn-submit{
+    @apply btn btn-block bg-[#F3406C] shadow-sm border-none shadow-[#F3406C] hover:bg-[#F3406C] text-white text-lg capitalize;
+}
+
+.background-section{
+    background: linear-gradient(180deg, rgba(8, 9, 16, 0.5) -100%, rgba(8, 9, 16, 0.5) 100%), url("https://cdn.mos.cms.futurecdn.net/iecqziaKCP3TKSmEUnnKXm.jpg");
+    @apply h-full bg-no-repeat bg-cover lg:block hidden;
+}
+
+.background-section .logo-content{
+    @apply flex items-center gap-x-7 my-auto h-full;
+}
+
+.logo-content .logo-text{
+    @apply text-white text-[2.5rem] leading-tight font-semibold;
+}
+
+.login-section .password-form,
+.register-section .password-form{
+    @apply relative;
+}
+
+.password-form input[id="password"]{
+    @apply pr-16;
+}
+
+.password-form .show-hide-password{
+    @apply absolute right-6;
+    top: 3.8rem;
+}
+
+.show-hide-password box-icon{
+    @apply text-sm
+}
+
+.layout-grid{
+    @apply grid lg:grid-cols-2 items-center min-h-screen;
+}
+
+.label-text-alt{
+    @apply text-sm font-normal mt-3 text-error !important;
+}
+
+@media screen and (max-width:1022px){
+    body{
+        background: linear-gradient(0deg, rgba(8,9,16,0.95) 0%, rgba(8,9,16,0.95) 100%), url("https://cdn.mos.cms.futurecdn.net/iecqziaKCP3TKSmEUnnKXm.jpg");
+    }
+}
+
